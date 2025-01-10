@@ -42,7 +42,7 @@ const YouTubeSummarizer = () => {
                 setSummary('Upon thorough analysis, this summary serves as a provisional narrative. In an actual deployment, this placeholder will be supplanted with a comprehensive and nuanced AI-generated elucidation of the content encapsulated within the YouTube video, integrating thematic elements, contextual relevance, and key insights.');
                 setLoading(false);
             }, 5000);
-        } catch (err) {
+        } catch (error) {
             setError('Failed to generate summary. Please try again.');
             setLoading(false);
         }
